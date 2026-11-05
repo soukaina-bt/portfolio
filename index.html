@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Ingénieur</title>
+  <meta name="description" content="Portfolio de deux futurs ingénieurs : profils, compétences et projets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <a href="#accueil" class="logo">Portfolio Ingénieur</a>
+    <nav>
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+      <button id="theme" type="button" aria-label="Changer de thème">Mode sombre</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <p class="hero-small">Vous cherchez un ingénieur?</p>
+      <h1>Ingénieur compétants,motivé et pret pour commencer des projets innovants!</h1>
+      <p class="hero-text">Nous sommes soukaina batouli et Achraf saadali. Voici nos compétences et trois projets dont nous sommes fiers.</p>
+      <div class="actions">
+        <a class="btn" href="cv.pdf" download>Télécharger le CV</a>
+        <a class="btn ghost" href="#projets">Voir les projets</a>
+      </div>
+    </section>
+
+    <section id="apropos">
+      <h2>À propos</h2>
+      <div class="duo">
+        <article>
+          <img src="photo1.jpg" alt="Portrait de [Soukaina batouli]" width="120" height="120">
+          <h3>[Prénom 1]</h3>
+          <p>Étudiant en ingénierie informatique. Curieux, organisé, j'aime transformer un problème flou en solution claire.</p>
+        </article>
+        <article>
+          <img src="photo2.jpg" alt="Portrait de [Achraf saadali]" width="120" height="120">
+          <h3>[Prénom 2]</h3>
+          <p>Étudiant en ingénierie informatique. Passionnée par la technologie, je travaille mieux en équipe.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="skills">
+        <div>
+          <h3>Langages</h3>
+          <ul><li>HTML / CSS</li><li>JavaScript</li><li>Python</li><li>C</li></ul>
+        </div>
+        <div>
+          <h3>Outils</h3>
+          <ul><li>Git et GitHub</li><li>VS Code</li><li>Linux</li><li>MySQL</li></ul>
+        </div>
+        <div>
+          <h3>Savoir-être</h3>
+          <ul><li>Travail en équipe</li><li>Gestion de projet</li><li>Communication</li><li>Autonomie</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets">
+      <h2>Projets</h2>
+      <div class="filters" role="group" aria-label="Filtrer les projets">
+        <button class="filter active" data-cat="tous" type="button">Tous</button>
+        <button class="filter" data-cat="web" type="button">Web</button>
+        <button class="filter" data-cat="donnees" type="button">Données</button>
+        <button class="filter" data-cat="embarque" type="button">AI</button>
+      </div>
+
+      <div class="projects">
+        <article class="project" data-cat="web">
+          <h3>Site de réservation</h3>
+          <p>Application web pour réserver des salles de travail. Technologies : HTML, CSS, JavaScript. Notre rôle : conception et développement. </p>
+          <a href="https://github.com/ton-compte/projet1">Voir sur GitHub</a>
+        </article>
+        <article class="project" data-cat="donnees">
+          <h3>Analyse de ventes</h3>
+          <p>Nettoyage et visualisation de données de ventes avec Python. Technologies : Python, Pandas. </p>
+          <a href="https://github.com/ton-compte/projet2">Voir sur GitHub</a>
+        </article>
+        <article class="project" data-cat="embarque">
+          <h3>Juris-IA Maroc – AI Legal Assistant</h3>
+          <p>Développement d'un assistant juridique intelligent basé sur l'intelligence artificielle, capable de répondre aux questions des utilisateurs en arabe à partir du Code pénal marocain.</p>
+          <a href="https://github.com/ton-compte/projet3">Voir sur GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="form" novalidate>
+        <label>Nom <input type="text" id="nom"></label>
+        <label>E-mail <input type="email" id="email"></label>
+        <label>Objet <input type="text" id="objet"></label>
+        <label>Message <textarea id="message" rows="5"></textarea></label>
+        <p id="retour" role="status"></p>
+        <button class="btn" type="submit">Envoyer le message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Portfolio Ingénieur · <a href="https://github.com/ton-compte">GitHub</a> · <a href="https://linkedin.com/in/ton-profil">LinkedIn</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
